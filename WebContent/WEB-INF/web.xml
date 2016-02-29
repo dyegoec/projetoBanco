@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Trabalho2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>LoginServLet</display-name>
+    <servlet-name>LoginServLet</servlet-name>
+    <servlet-class>servLet.LoginServLet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServLet</servlet-name>
+    <url-pattern>/LoginServLet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>principalServlet</display-name>
+    <servlet-name>principalServlet</servlet-name>
+    <servlet-class>servLet.principalServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>principalServlet</servlet-name>
+    <url-pattern>/principalServlet</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>Filtro</display-name>
+    <filter-name>Filtro</filter-name>
+    <filter-class>servLet.Filtro</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filtro</filter-name>
+    <url-pattern>/Filtro</url-pattern>
+  </filter-mapping>
+</web-app>
